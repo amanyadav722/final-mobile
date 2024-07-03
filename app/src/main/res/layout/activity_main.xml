@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Scan NFC"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 
@@ -32,8 +33,38 @@
         android:layout_height="wrap_content"
         android:text="Reset"
         app:layout_constraintTop_toBottomOf="@id/txtNFCData"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 
+    <EditText
+        android:id="@+id/editTextWriteNFC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text to write to NFC"
+        app:layout_constraintTop_toBottomOf="@id/btnReset"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnWriteNFC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write to NFC"
+        app:layout_constraintTop_toBottomOf="@id/editTextWriteNFC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btnUpdateNFC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update NFC"
+        app:layout_constraintTop_toBottomOf="@id/btnWriteNFC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
